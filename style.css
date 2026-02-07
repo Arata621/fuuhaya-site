@@ -1,0 +1,78 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: radial-gradient(ellipse at top, #0a0a0a, #120017);
+  color: #e0e0e0;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(90deg, #4300b3, #1f0045);
+  text-align: center;
+  padding: 50px 20px;
+  color: #fff;
+  border-bottom: 4px solid #ff00ff;
+}
+
+.header h1 {
+  font-size: 48px;
+  text-shadow: 0 0 10px #ff00ff;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #ccf;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Section */
+.section {
+  background: #1a001f;
+  border: 2px solid #2f003e;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  padding: 25px;
+  box-shadow: 0 0 12px #8a00ff;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ff00ff;
+  padding-bottom: 6px;
+  color: #ffccff;
+}
+
+.section p,
+.section ul {
+  padding-left: 10px;
+}
+
+.section ul li {
+  margin-bottom: 8px;
+  list-style: disc;
+  color: #dcdcff;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #aaa;
+  border-top: 1px solid #333;
+}
