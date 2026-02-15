@@ -25,6 +25,7 @@ body {
 .header h1 {
   font-size: 48px;
   text-shadow: 0 0 10px #ff00ff;
+  letter-spacing: 2px;
 }
 
 .subtitle {
@@ -35,7 +36,7 @@ body {
 /* Container */
 .container {
   max-width: 900px;
-  margin: 40px auto;
+  margin: 60px auto;
   padding: 0 20px;
 }
 
@@ -57,6 +58,14 @@ body {
   color: #ffccff;
 }
 
+transition: 0.3s ease;
+cursor: pointer;
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #ff00ff;
+}
+
 .section p,
 .section ul {
   padding-left: 10px;
@@ -75,4 +84,8 @@ body {
   font-size: 12px;
   color: #aaa;
   border-top: 1px solid #333;
+}
+
+body {
+  background: red !important;
 }
