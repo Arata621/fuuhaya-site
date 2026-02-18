@@ -97,3 +97,9 @@ cursor: pointer;
   color: #aaa;
   border-top: 1px solid #333;
 }
+
+.section--primary {
+  border: 1px solid #ff00ff;
+  box-shadow: 0 0 30px #ff00ff;
+  background: linear-gradient(145deg, #22002a, #2d0035);
+}
