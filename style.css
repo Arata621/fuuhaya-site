@@ -109,3 +109,33 @@ cursor: pointer;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
 }
+
+.hero-btn {
+  margin-top: 20px;
+}
+
+.data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.data-card {
+  background: linear-gradient(145deg, #200024, #2b0033);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #3a004d;
+  transition: 0.3s ease;
+}
+
+.data-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px #ff00ff;
+}
+
+.data-card h3 {
+  margin-bottom: 10px;
+  color: #ffccff;
+}
