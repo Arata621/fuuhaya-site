@@ -11,7 +11,7 @@ body {
   background: radial-gradient(ellipse at top, #0a0a0a, #120017);
   color: #e0e0e0;
   line-height: 1.6;
-　letter-spacing: 0.5px;
+  letter-spacing: 0.5px;
 }
 
 /* Header */
@@ -51,6 +51,7 @@ body {
   box-shadow: 0 0 12px #8a00ff;
 
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .section h2 {
@@ -64,14 +65,10 @@ body {
   font-weight: 600;
 }
 
-transition: 0.3s ease;
-cursor: pointer;
-
 .section:hover {
   transform: translateY(-6px);
   box-shadow: 0 0 25px #ff00ff;
 }
-
 
 .section p {
   padding-left: 10px;
@@ -84,7 +81,6 @@ cursor: pointer;
   box-shadow: 0 0 30px #ff00ff;
   background: linear-gradient(145deg, #22002a, #2d0035);
 }
-
 
 .section ul {
   padding-left: 10px;
@@ -104,6 +100,7 @@ cursor: pointer;
   color: #aaa;
   border-top: 1px solid #333;
 }
+
 .section-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -140,12 +137,13 @@ cursor: pointer;
   color: #ffccff;
 }
 
-/* スマホ幅用 */
+/* ステップ3：レスポンシブ修正 */
 @media (max-width: 768px) {
 
   /* 本文や見出しの文字サイズ調整 */
   body {
     font-size: 14px;
+    line-height: 1.4;
   }
 
   h1 {
@@ -156,16 +154,25 @@ cursor: pointer;
     font-size: 18px;
   }
 
+  .subtitle {
+    font-size: 14px;
+  }
+
   /* ボタンやリンクの押しやすさ調整 */
-  .btn {
+  .btn,
+  .hero-btn {
     padding: 10px 16px;
     font-size: 14px;
   }
 
-  /* 画像を幅100%にしてはみ出さないように */
-  img {
-    width: 100%;
-    height: auto;
+  /* ヘッダー余白調整 */
+  .header {
+    padding: 30px 10px;
+  }
+
+  /* セクション間の余白微調整 */
+  .section {
+    padding: 16px;
   }
 
   /* データカードの横並びを縦並びに変更 */
@@ -175,8 +182,21 @@ cursor: pointer;
     gap: 16px;
   }
 
-  /* セクション間の余白微調整 */
-  .section {
-    padding: 16px;
+  /* 画像は幅100%で収める */
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Gridのカラム調整 */
+  .section-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  /* 横スクロール防止 */
+  .container {
+    overflow-x: hidden;
+    padding: 0 10px;
   }
 }
